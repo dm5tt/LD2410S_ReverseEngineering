@@ -41,7 +41,9 @@ Guess this is bit banged I2C as the hardware engine of the microcontroller only 
 ## SPI
 
 
-The SPI runs at 10MHz clock rate. The ICL1112 acts as a SPI master.
+The SPI runs at 10MHz clock rate. The ICL1112 acts as a SPI master. 
+
+This one was rather tricky to capture as my Logic Analyzer was loosing frames because of the high frequency (fmax. 20MHz).
 
 
 ![Drag Racing](./pics/ld2410s_spi_mosi_rigol_block.png)
@@ -49,7 +51,6 @@ The SPI runs at 10MHz clock rate. The ICL1112 acts as a SPI master.
 ![Drag Racing](./pics/ld2410s_spi_mosi_rigol_zoom.png)
 
 
-This one was rather tricky to capture as my Logic Analyzer was loosing frames because of the high frequency (fmax. 20MHz).
 
 According to the datasheet this board is using the "Range FFT data frame".
 
