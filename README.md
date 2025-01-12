@@ -36,7 +36,7 @@ After power-on 4 rapid burts in quick succession. During normal operation a burs
 
 A sniff with a Saleae can be found [here](./misc/ld2410s_i2c_saleae.sal). The power-up sequence and normal operation is visible in the trace.
 
-Guess this is bit banged I2C as the hardware engine microcontroller only supports rates up to 400kHz. 
+Guess this is bit banged I2C as the hardware engine of the microcontroller only supports rates up to 400kHz. 
 
 ## SPI
 
