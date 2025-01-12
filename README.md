@@ -7,7 +7,7 @@ The LD2410S is a FMCW Radar based on the
 * [ICLegend ICL1112](https://edworks.co.kr/sensor/icl1112/): 24G 1T1R mmWave Sensor SoC
 - [Puya F030K28](https://download.py32.org/Datasheet/en/PY32F030_Datasheet_V1.8.pdf): Cortex-M0, 64KBytes Flash, 8 KBytes SRAM, I2C/SPI/UART
 
-I'm not going to make any screenshots from the ICL1112 datasheet in this project as their have a huge "CONFIDENTAL" mark over them. Just visit the public website which is linked on the device name and access them by yourself.
+I'm not going to make any screenshots from the ICL1112 datasheet in this project as they have a huge "CONFIDENTAL" mark over them. Just visit the public website which is linked on the device name and access them by yourself.
 
 # PCBs
 
