@@ -49,7 +49,7 @@ The SPI runs at 10MHz clock rate. The ICL1112 acts as a SPI master.
 ![Drag Racing](./pics/ld2410s_spi_mosi_rigol_zoom.png)
 
 
-This one was rather tricky to capture as my Logic Analyzer was loosing frames because of the bad signal and high frequency.
+This one was rather tricky to capture as my Logic Analyzer was loosing frames because of the high frequency (fmax. 20MHz).
 
 According to the datasheet this board is using the "Range FFT data frame".
 
