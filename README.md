@@ -30,13 +30,13 @@ System diagram of the ICLegend IC1112. Taken from the public website of ICLegend
 
 ## I2C
 
-The I2C runs at 3MHz () and seems to be used for the initial configuration and trigger of the radar scan.
+The I2C runs at 3MHz (sic) and seems to be used for the initial configuration and trigger of the radar scan.
 
 After power-on 4 rapid burts in quick succession. During normal operation a burst can be seen every 2.05s.
 
 A sniff with a Saleae can be found [here](./misc/ld2410s_i2c_saleae.sal). The power-up sequence and normal operation is visible in the trace.
 
-Guess this is bit banged I2C as the hardware engine only supports rates up to 400kHz. 
+Guess this is bit banged I2C as the hardware engine microcontroller only supports rates up to 400kHz. 
 
 ## SPI
 
