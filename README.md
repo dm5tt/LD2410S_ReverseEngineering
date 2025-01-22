@@ -83,9 +83,11 @@ Lets try to interpret them.
 ```
 Word 0: 
  0 10101010 00110000 00000000 00010001
-   Preamble
+   10101010 = Preamble
+            0011 = Range Data
+                0000 0000 0 = FFT Chirp Index
+                           00 00010001 = CFG FFT TX MAX
 
-Todo
 ```
 
 
@@ -116,6 +118,9 @@ Word 2-16: Range FFT Data
 ```
 Word 17: 
 17 11101100 11101110 00010000 01010101
-                              Postamble
- Todo
+   11101100 11101110 = Checksum        
+                     0001  = Frame Index
+                         00 = Not Used
+                           00 CFG Message
+                              01010101 = Postamble
 ```
