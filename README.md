@@ -129,7 +129,7 @@ Word 17:
 For connecting to the running device pyOCD with a ST-Link V2 was used. The great thing about pyOCD is that it can use standardized .pack files. The requred .pack can be downloaded from the [Puya Repository](https://gitee.com/puya-semiconductor/tools-and-software.git)
 
 ```
-had@es-ws:~/Code/> pyocd cmd --pack "Puya.PY32F0xx_DFP.1.2.0.pack"  -t "py32f030x8" 
+# pyocd cmd --pack "Puya.PY32F0xx_DFP.1.2.0.pack"  -t "py32f030x8" 
 Connected to PY32F030x8 [Running]: 6068FF2...
 ```
 
@@ -165,7 +165,7 @@ No read Protection is being set.
 ### String Analysis
 
 ```
-had@es-ws:~/Code strings ./PY32_Packs_MDK/flash_dump.bin
+# strings flash_dump.bin
 
 error: unsupport dataType
 Error: dataLen is too long
@@ -188,7 +188,8 @@ That will be very very painful to reverse engineer the function names using Ghid
 ### Interrupt Configuration 
 
 ```
-(mesh-py) had@es-ws:~/Code/tools-and-software/PY32_Packs_MDK> python3 test3.py 
+# python3 test3.py 
+
 Index | IRQ Name                  | Handler Address
 -------------------------------------------------------
     0 | Initial SP                | 0x200018F8
