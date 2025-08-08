@@ -183,7 +183,7 @@ hspi->ErrorCode = %d
 ========= Error State =========
 ```
 
-That will be very very painful to reverse engineer the function names using Ghdira.
+That will be very very painful to reverse engineer the function names using Ghidra.
 
 ### Interrupt Configuration 
 
