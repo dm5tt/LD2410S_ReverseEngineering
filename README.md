@@ -160,7 +160,7 @@ had@es-ws:~/Code> md5sum flash_dump.bin
 1574bfeb56acbc239730b190bbbf028a  flash_dump.bin
 ```
 
-No read Protection is being set.
+No read protection is set.
 
 ```
 # strings flash_dump.bin
@@ -181,7 +181,7 @@ hspi->ErrorCode = %d
 ========= Error State =========
 ```
 
-Without symbols it will be very painful to reverse engineer the function names using Ghidra.
+Without symbols it will be very painful to reverse engineer the function names by using Ghidra.
 
 ### Interrupt Configuration 
 
