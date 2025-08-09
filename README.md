@@ -143,7 +143,7 @@ DAP IDCODE:   0x0bc
 
 Jackpot! We have running connection.
 
-### Firmware Dump
+### Firmware Dump + Strings Analysis
 
 ```
 pyocd> show map
@@ -161,8 +161,6 @@ had@es-ws:~/Code> md5sum flash_dump.bin
 ```
 
 No read Protection is being set.
-
-### String Analysis
 
 ```
 # strings flash_dump.bin
@@ -183,7 +181,7 @@ hspi->ErrorCode = %d
 ========= Error State =========
 ```
 
-That will be very very painful to reverse engineer the function names using Ghidra.
+Without symbols it will be very painful to reverse engineer the function names using Ghidra.
 
 ### Interrupt Configuration 
 
