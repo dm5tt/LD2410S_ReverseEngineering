@@ -186,40 +186,57 @@ Without symbols it will be very painful to reverse engineer the function names u
 ### Interrupt Configuration 
 
 ```
-# python3 test3.py 
-
-Index | IRQ Name                  | Handler Address
--------------------------------------------------------
-    0 | Initial SP                | 0x200018F8
-    1 | Reset Handler             | 0x080000D5
-    2 | WWDG                      | 0x08001F13
-    3 | PVD                       | 0x08001E43
-    4 | RTC                       | 0x00000000
-    5 | FLASH                     | 0x00000000
-    6 | RCC                       | 0x00000000
-    7 | EXTI0_1                   | 0x00000000
-    8 | EXTI2_3                   | 0x00000000
-    9 | EXTI4_15                  | 0x00000000
-   10 | TSC                       | 0x00000000
-   11 | DMA_CH1                   | 0x08001FC7
-   12 | DMA_CH2_3                 | 0x00000000
-   13 | DMA_CH4_5                 | 0x00000000
-   14 | ADC_COMP                  | 0x08001F95
-   15 | TIM1_BRK_UP_TRG_COM       | 0x08001FF3
-   16 | TIM1_CC                   | 0x080000E7
-   17 | TIM2                      | 0x080000E7
-   18 | TIM3                      | 0x080000E7
-   19 | TIM6_DAC                  | 0x080000E7
-   20 | TIM7                      | 0x080000E7
-   21 | TIM14                     | 0x080000E7
-   22 | TIM15                     | 0x08000999
-   23 | TIM16                     | 0x080000E7
-   24 | TIM17                     | 0x00000000
-   25 | I2C1                      | 0x08000995
-   26 | SPI1                      | 0x08000997
-   27 | USART1                    | 0x00000000
-   28 | USART2                    | 0x080000E7
-   29 | CEC                       | 0x080000E7
+--- PY32F030 Interrupt Vector Table ---
+Interrupt Name            IRQn       Vector Address       Handler Address     
+--------------------------------------------------------------------------------
+Initial Stack Pointer     N/A          0x00000000           0x200018f8
+Reset                     N/A          0x00000004           0x080000d5
+NMI                       N/A          0x00000008           0x08001f13
+HardFault                 N/A          0x0000000c           0x08001e43
+Reserved_4                N/A          0x00000010           0x00000000
+Reserved_5                N/A          0x00000014           0x00000000
+Reserved_6                N/A          0x00000018           0x00000000
+Reserved_7                N/A          0x0000001c           0x00000000
+Reserved_8                N/A          0x00000020           0x00000000
+Reserved_9                N/A          0x00000024           0x00000000
+Reserved_10               N/A          0x00000028           0x00000000
+SVCall                    N/A          0x0000002c           0x08001fc7
+Reserved_12               N/A          0x00000030           0x00000000
+Reserved_13               N/A          0x00000034           0x00000000
+PendSV                    N/A          0x00000038           0x08001f95
+SysTick                   N/A          0x0000003c           0x08001ff3
+WWDG                      0            0x00000040           0x080000e7
+PVD                       1            0x00000044           0x080000e7
+RTC                       2            0x00000048           0x080000e7
+Flash                     3            0x0000004c           0x080000e7
+RCC                       4            0x00000050           0x080000e7
+EXTI0_1                   5            0x00000054           0x080000e7
+EXTI2_3                   6            0x00000058           0x08000999
+EXTI4_15                  7            0x0000005c           0x080000e7
+Reserved_24               8            0x00000060           0x00000000
+DMA_Channel1              9            0x00000064           0x08000995
+DMA_Channel2_3            10           0x00000068           0x08000997
+Reserved_27               11           0x0000006c           0x00000000
+ADC_COMP                  12           0x00000070           0x080000e7
+TIM1_BRK_UP_TRG_COM       13           0x00000074           0x080000e7
+TIM1_CC                   14           0x00000078           0x080000e7
+Reserved_31               15           0x0000007c           0x00000000
+TIM3                      16           0x00000080           0x080000e7
+LPTIM1                    17           0x00000084           0x08001f11
+Reserved_34               18           0x00000088           0x00000000
+TIM14                     19           0x0000008c           0x0800202d
+Reserved_36               20           0x00000090           0x00000000
+TIM16                     21           0x00000094           0x080000e7
+TIM17                     22           0x00000098           0x080000e7
+I2C1                      23           0x0000009c           0x080000e7
+Reserved_40               24           0x000000a0           0x00000000
+SPI1                      25           0x000000a4           0x08001fc5
+SPI2                      26           0x000000a8           0x080000e7
+USART1                    27           0x000000ac           0x080000e7
+USART2                    28           0x000000b0           0x08002389
+Reserved_45               29           0x000000b4           0x00000000
+LED                       30           0x000000b8           0x080000e7
+Reserved_47               31           0x000000bc           0x00000000
 ````
 
 ### Periphery registers
