@@ -154,7 +154,7 @@ pyocd> show map
 
 ```
 pyocd> save 0x08000000 0x00010000 flash_dump.bin
-Saved 32768 bytes to flash_dump.bin
+Saved 65536 bytes to flash_dump.bin
 
 had@es-ws:~/Code> md5sum flash_dump.bin
 1574bfeb56acbc239730b190bbbf028a  flash_dump.bin
